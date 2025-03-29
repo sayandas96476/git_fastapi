@@ -25,3 +25,6 @@ def test_add():
     assert response.status_code == 200
     assert response.json() == {"result": 2.1 }
 
+    response = client.post("/divide/", json=payload)  # ✅ POST request
+    assert response.status_code == 200
+    assert response.json() == {"result": 2.1 }

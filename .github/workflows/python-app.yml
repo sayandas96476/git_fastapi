@@ -4,9 +4,11 @@ name: Python CI
 on:
   push:
     branches:
+      - sit 
       - main
   pull_request:
     branches:
+      - sit
       - main
 
 jobs:
